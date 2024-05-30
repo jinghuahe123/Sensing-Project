@@ -1,4 +1,4 @@
-import pyaudio, wave, numpy as np, matplotlib.pyplot as plt
+import pyaudio, wave, numpy as np, matplotlib.pyplot as plt 
 
 def record(duration, filename, format=pyaudio.paInt16, rate=44100, chunk=1024):
 
