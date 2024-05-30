@@ -48,7 +48,7 @@ def play(filename):
                     )
     
     chunk = 1024
-    while data := wf.readframes(chunk): # shortened example code with walrus (see below)
+    while data := wf.readframes(chunk): # edited to shorten example code with walrus (see below)
         stream.write(data)
 
     '''
