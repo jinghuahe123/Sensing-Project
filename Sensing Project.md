@@ -1,4 +1,4 @@
-**Sensing Project**
+# **Sensing Project**
 
 **Option 1: Acoustic Sensing System**
 
