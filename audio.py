@@ -32,8 +32,6 @@ def record(duration, filename, format=pyaudio.paInt16, rate=44100, chunk=1024):
         wf.setframerate(rate)
         wf.writeframes(b''.join(frames)) # empty bytestring that 'frames' list is appended to
 
-    wave.close()
-
 
 def play(filename):
 
