@@ -108,3 +108,5 @@ if __name__ == "__main__":
     #print(type(audio))
 
     plot("一路生花.wav", 10000000)
+
+    play("一路生花.wav")
