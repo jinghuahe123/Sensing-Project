@@ -16,7 +16,7 @@ def record(duration, filename, format=pyaudio.paInt16, rate=44100, chunk=1024):
     frames = []
 
     for _ in range(int(rate / chunk * duration)): # math that calculates the total number of chunks in audio length (rate * duration is total number of frames, divide by number of frames in one chunk)
-        data = stream.read(chunk) # takes 1024 (one chunk) of data each iteration of loop
+        data = stream.read(chunk) # takes 1024 (one chunk) of data in each iteration of loop
         frames.append(data)
 
 
