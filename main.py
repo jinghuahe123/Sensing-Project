@@ -1,5 +1,4 @@
-from audio import *
-import argparse
+import audio, argparse
 
 def parse():
     arg = argparse.ArgumentParser(description="main.py")
@@ -15,27 +14,27 @@ def parse():
             arg.error("Recording selected, time and filename required.")
             exit(1)
         else:
-            record(args.t, args.o)
+            audio.record(args.t, args.o)
     elif args.f in ["play"]:
         if args.o is None:
             arg.error("Playback selected, filename required.")
             exit(1)
         else:
-            play(args.o)
+            audio.play(args.o)
     elif args.f in ["parse"]:
         if args.o is None:
             arg.error("Parser selected, filename required.")
             exit(1)
         else:
-            audio, data = parser(args.o)
-            print(audio[:args.s])
+            f_audio, data = audio.parser(args.o)
+            print(f_audio[:args.s])
             print(data[:args.s])
     elif args.f in ["plot"]:
         if args.o is None or args.s is None:
             arg.error("Plotting selected, filename and slice required.")
             exit(1)
         else:
-            plot(args.o, args.s)
+            audio.plot(args.o, args.s)
     else:
         arg.error("Invalid arguments.")
         exit(1)
