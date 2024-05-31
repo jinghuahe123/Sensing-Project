@@ -12,6 +12,7 @@ def record(duration, filename, format=pyaudio.paInt16, rate=44100, chunk=1024):
                     frames_per_buffer=chunk     # arbitrarily chosen number of frames signals are split into
                     ) 
     
+    print("Recording Started")
     
     frames = []
 
@@ -19,6 +20,7 @@ def record(duration, filename, format=pyaudio.paInt16, rate=44100, chunk=1024):
         data = stream.read(chunk) # takes 1024 (one chunk) of data in each iteration of loop
         frames.append(data)
 
+    print("Recording Finished")
 
     stream.stop_stream()
     stream.close()
@@ -83,7 +85,7 @@ def parser(filename, output=True):
         return audio, data
     
 
-def plot(filename, slice=None):
+def plot(filename, slice):
     with wave.open(filename, 'rb') as wf:
         nframes = wf.getnframes()
         rate = wf.getframerate()
@@ -100,11 +102,4 @@ def plot(filename, slice=None):
     
 
 if __name__ == "__main__":
-    #audio, data = parser("一路生花.wav")
-    #print(audio)
-    #print(data)
-    #print(type(audio))
-
-    plot("一路生花.wav", 10000000)
-
-    play("一路生花.wav")
+    print("Please run main.py file.")
