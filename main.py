@@ -3,7 +3,7 @@ import argparse
 
 def parse():
     arg = argparse.ArgumentParser(description="main.py")
-    arg.add_argument('-f', choices=["record", "play", "parse", "plot"], required=True, help="Option to select function.")
+    arg.add_argument('-f', choices=["record", "play", "parse", "plot"], required=True, help="Select function.")
     arg.add_argument('-t', type=int, help="Recording length.")
     arg.add_argument('-o', type=str, help="Filename.")
     arg.add_argument('-s', type=int, help="Slice output.")
