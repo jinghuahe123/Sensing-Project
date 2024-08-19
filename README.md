@@ -26,7 +26,7 @@ The cable below provides power to the board. On one end is a normal type-C conne
 ![Picture 5](https://github.com/jinghuahe123/Sensing-Project/blob/main/images/Picture5.jpg)
 _Not every mechanically compatible USB-C port supports the 12V USB-PD specification required for this device to function. Ensure third party power sources support 12V PD with minimum 1.5A current. Misuse could result in a damaged main board._
 
-If the power bank does light up with a number (indicating percentage of battery left) within a few seconds of plugging the board in, please press the silver button on the side. If the power bank still does not light up, please charge it.  
+If the power bank doesn't light up with a number (indicating percentage of battery left) within a few seconds of plugging the board in, please press the silver button on the side. If the power bank still does not light up, please charge it.  
 
 Following, one of the red/black speaker cables (highlighted below) should be plugged into each speaker channel (‘Right Speaker Channel OUTPUT’ and ‘Left Speaker Channel OUTPUT’). The other end should be plugged into the cable coming out of the speaker. Both ends of the red/black speaker cable are the same, it does not matter which end is plugged into which device. 
 
