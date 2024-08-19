@@ -1,5 +1,0 @@
-Channels: 8
-Sample Width: 2
-Sample Rate: 48000
-Total Frames: 389760
-[  0   0   1 ... -13   0  -1]
