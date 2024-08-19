@@ -1,4 +1,7 @@
 # Sensing-Project
+
+A copy of this document can be found in the files under 'Equipment Documentation.docx'
+
 ## Imperial College RADAR Project
 
 The equipment supplied for this project consists of two main parts: the speaker setup and the microphone setup. For simplicity, this guide separates the two into separate sections. An additional software demonstration and template is included.
