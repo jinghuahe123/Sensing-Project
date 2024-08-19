@@ -103,3 +103,4 @@ def plot(filename, slice):
 
 if __name__ == "__main__":
     print("Please run main.py file.")
+    
