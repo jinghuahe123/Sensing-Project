@@ -12,3 +12,4 @@ if __name__ == "__main__":
     filename = input("Output Filename: ")
 
     main(duration, filename)
+    #main(duration, filename, False)

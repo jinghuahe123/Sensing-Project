@@ -3,6 +3,7 @@ import sounddevice as sd, numpy as np, scipy.io.wavfile as wav, matplotlib.pyplo
 # record audio
 def record(duration, sample_rate=48000, channels=8):
     print(f"Recording {channels}-channel audio for {duration} seconds...")
+    duration=int(duration)
     recording = sd.rec(
         int(sample_rate * duration), 
         samplerate=sample_rate, 
